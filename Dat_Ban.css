@@ -1,0 +1,231 @@
+*{
+    box-sizing: border-box;
+}
+.clearfix{ 
+        content: "";  
+        display: table;  
+        clear: both;    
+}
+
+/* Css Phần Banner */
+
+body{
+    font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: #adadad;
+    min-height: 100vh;
+}
+.banner{
+    background: url(img/banner-bg.png) bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px 0 0;
+    margin-bottom: 30px;
+}
+.banner .title{
+    margin: 30px 0 10px;
+    font-size: 24px;
+    line-height: 30px;
+}
+@media only screen and (min-width: 767px) {
+    .banner {
+        background: url('img/home-banner-bg.png') top center;
+        background-repeat: no-repeat;
+        margin-top: 0%;
+        padding: 240px 0 540px;
+        margin-bottom: -360px;
+    }
+    .banner .text-banner {
+        margin-bottom: 0;
+        max-width: 593px;
+    }
+    .banner .title{
+        margin: 0 0 30px 0;
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .text-banner ul li{
+        line-height: 25px;
+        font-size: 20px;
+        margin: 0 0 20px;
+    }
+    .photo{
+        display: none;
+    }  
+}
+.banner .photo {
+    text-align: center;
+    position: relative;
+    padding: 0 5px 0 20px;
+    bottom: -10px;
+}
+.banner .photo img{
+    width: 100%;
+    position: relative;
+    top: -20px;
+}
+.banner .container{
+    padding: 0 15px;
+    width: 100%;
+    max-width: 1130px;
+    margin: 0 auto;
+}
+.banner ul{
+    padding: 20px;
+}
+.banner ul li::marker{
+    color: red;
+}
+.banner .title{
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+/* Css Phần Content */
+/* Phần giới thiệu */
+.box-gioithieu {
+    padding: 0 10px;
+    width: 100%;
+    max-width: 1070px;
+    margin: 0 auto;
+    height: auto;
+}
+.heading {
+    text-align: center;
+    margin: 0 0 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    font-family: sans-serif;
+    color: black;
+}
+@media only screen and (min-width: 767px) {
+    .heading {
+        font-size: 40px;
+        line-height: 100%;
+        margin-top: 130px;
+        padding-top: 80px;
+    }
+    .box-gioithieu .list li .title {
+        margin: 0 0 6px;
+        font-size: 22px;
+        line-height: 27px;
+    }
+    .box-gioithieu .list li .info .txt{
+        font-size: 20px;
+        line-height: 20px;
+    }
+}
+.box-gioithieu ul li{
+    list-style-type: none;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #adadad;
+    float: left;
+}
+.box-gioithieu .list .title {
+    margin: 0 0 6px;
+    color: #C00A27;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+img{
+    width: 20%;
+    height: auto;
+    float: left;
+}
+.info{
+    width: 75%;
+    margin-left: 5%;
+    padding: 10px auto;
+    float: left;
+}
+.txt{
+    max-width:100% ;
+}
+/* Phần cam kết */ 
+.box-camket .heading{
+    margin: 40px 0 40px;
+}
+.box-camket {
+    width: 100%;
+    max-width: 840px;
+    margin: 0 auto;
+    margin-top: -10px;
+    padding: 10px;
+    color: #ffffff;
+}
+.box-camket ul li{
+    list-style-type: none;
+}
+.box-camket .list li img {
+    width: 46px;
+    height: 46px;
+    margin-bottom: 20px;
+    margin-left: 40%;
+}
+.text-top-camket{
+    text-align: center;
+    font-size: 15px;
+    color: #adadad;
+}
+.text-bottom-camket{
+    text-align: center;
+    font-size: 20px;
+    color: #e74c3c;
+}
+.box-camket .list{
+    margin-top: 30px;
+}
+.box-camket .list li {
+    width: 50%;
+    padding: 0 10px;
+    float: left;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.box-camket .list li p{
+    float: left;
+    margin-top: -15px;
+}
+.box-camket .list .txt {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+    height: 36px;
+}
+@media only screen and (min-width: 767px) {
+    .camket {
+        padding: 95px 0 150px;
+        margin: 25px 0 -30px;
+        overflow: hidden;
+        background: url('img/commit-bg.png') top center;
+        background-repeat: no-repeat;
+    }
+    .box-camket .list li img {
+        margin-bottom: 20px;
+        width: 72px;
+        height: 72px;
+        margin-left: 30%;
+    }
+    .box-camket .list li {
+        width: 33.33%;
+        padding: 0 40px;
+        margin-bottom: 50px;
+        float: left;
+    }
+    .box-camket .list .txt {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        height: 50px;
+    }
+}
