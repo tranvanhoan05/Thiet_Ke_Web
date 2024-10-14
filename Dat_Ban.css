@@ -86,6 +86,7 @@ body{
 }
 
 /* Css Phần Content */
+
 /* Phần giới thiệu */
 .box-gioithieu {
     padding: 0 10px;
@@ -137,7 +138,7 @@ body{
     text-transform: uppercase;
     font-family: sans-serif;
 }
-img{
+.gioithieu img{
     width: 20%;
     height: auto;
     float: left;
@@ -151,9 +152,13 @@ img{
 .txt{
     max-width:100% ;
 }
+
 /* Phần cam kết */ 
-.box-camket .heading{
-    margin: 40px 0 40px;
+.camket{
+    background: url('img/commit-bg-mobile.png') center;
+    background-repeat: repeat-x;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
 }
 .box-camket {
     width: 100%;
@@ -163,19 +168,38 @@ img{
     padding: 10px;
     color: #ffffff;
 }
+.box-camket .heading{
+    margin: 40px 0 40px;
+}
 .box-camket ul li{
     list-style-type: none;
+}
+.box-camket .list{
+    display: flex;
+    flex-wrap: wrap; /* Cho phép các mục xuống dòng nếu không đủ chỗ */
+    justify-content: center;
+}
+.box-camket .list li {
+    width: 50%;
+    padding: 0 10px;
+    /* float: left; */
+    text-align: center;
+    margin-bottom: 20px;
+}
+.box-camket .list li p{
+    /* float: left; */
+    margin-top: -15px;
 }
 .box-camket .list li img {
     width: 46px;
     height: 46px;
     margin-bottom: 20px;
-    margin-left: 40%;
 }
 .text-top-camket{
     text-align: center;
     font-size: 15px;
     color: #adadad;
+    margin-top: 20px;
 }
 .text-bottom-camket{
     text-align: center;
@@ -184,17 +208,6 @@ img{
 }
 .box-camket .list{
     margin-top: 30px;
-}
-.box-camket .list li {
-    width: 50%;
-    padding: 0 10px;
-    float: left;
-    text-align: center;
-    margin-bottom: 20px;
-}
-.box-camket .list li p{
-    float: left;
-    margin-top: -15px;
 }
 .box-camket .list .txt {
     font-size: 14px;
@@ -206,7 +219,6 @@ img{
     .camket {
         padding: 95px 0 150px;
         margin: 25px 0 -30px;
-        overflow: hidden;
         background: url('img/commit-bg.png') top center;
         background-repeat: no-repeat;
     }
@@ -214,7 +226,6 @@ img{
         margin-bottom: 20px;
         width: 72px;
         height: 72px;
-        margin-left: 30%;
     }
     .box-camket .list li {
         width: 33.33%;
@@ -228,4 +239,161 @@ img{
         line-height: 25px;
         height: 50px;
     }
+}
+
+/* Phần giới thiệu các loại tiệc */
+.box-cacloaitiec{
+    padding: 0 10px 30px;
+    width: 100%;
+    max-width: 1130px;
+    margin: 0 auto;
+}
+.box-cacloaitiec .heading{
+    margin: 40px 0 50px;
+}
+.box-cacloaitiec ul li{
+    list-style-type: none;
+}
+.box-cacloaitiec .list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.box-cacloaitiec .list li {
+    width: 50%;
+    padding: 0 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.cacloaitiec img {
+    max-width: 95%;
+}
+.box-cacloaitiec .list li .title{
+    color: red;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+.box-cacloaitiec .list li .txt {
+    font-weight: 400;
+    color: #666666;
+}
+@media only screen and (min-width:767px){
+    .box-cacloaitiec .list li {
+        width: 33.33%;
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+    .box-cacloaitiec .list li .title{
+        font-size: 20px;
+        margin: 10px 0;
+    }
+    .box-cacloaitiec .list li .txt{
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+
+/* Phần liên hệ */
+.box-lienhe {
+    background: url(img/contact-bg.jpg) center;
+    /* background-repeat: no-repeat; */
+    background-repeat: repeat-x;
+    color: #FFFFFF;
+    padding: 30px 0;
+}
+.box-lienhe .container{
+    width: 100%;
+    max-width: 1130px;
+    margin: 0 auto;
+    padding: 0 5px;   
+}
+.box-lienhe .form-lienhe{
+    max-width: 500px;
+    margin: 0 auto 20px;
+    padding: 0 10px;
+}
+.box-lienhe .title {
+    margin: 0 0 10px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: sans-serif;
+}
+.box-lienhe .form {  
+    text-align: center;
+}
+.box-lienhe .container{
+    margin: 0 auto;
+}
+.box-lienhe .photo-lienhe{
+    margin: 0 auto;
+    display: block;
+}
+.box-lienhe .container img{
+    max-width: 100%;
+    padding: 0 5px;
+    height: auto;
+}
+p {
+    display: block;
+}
+.box-lienhe .txt {
+    margin: 0 0 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
+input[type="text"], input[type="tel"] {  
+    width: 100%; /* Chiều rộng 100% */  
+    padding: 10px; /* Padding */  
+    margin: 10px 0; /* Khoảng cách */  
+    border: none; /* Không viền */  
+}  
+.box-lienhe .container button {  
+    background: #333333; /* Màu nút */  
+    color: white; /* Màu chữ nút */  
+    padding: 10px 20px; /* Padding */  
+    border: none; /* Không viền */  
+    cursor: pointer; /* Con trỏ chuột */  
+    font-size: 16px; /* Kích thước chữ nút */
+}
+@media only screen and (min-width:960px){
+    .box-lienhe .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .box-lienhe .container .form-lienhe {
+        width: 50%;
+        margin: 0 auto 20px;
+    }
+    .box-lienhe .container img{
+        width: 50%;
+    }
+    .box-lienhe button{
+        padding: 15px 30px;
+        font-size: 20px;
+        line-height: 27px;
+        margin-top: 25px;
+    }
+    input[type="text"], input[type="tel"]{
+        height: 50px;
+        padding: 10px 20px;
+        font-size: 15px;
+        line-height: 150%;
+    }
+}
+@media only screen and (min-width:767px) {
+    .box-lienhe  .title{
+        margin: 0 0 15px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+.box-lienhe .form-lienhe .form button:hover{
+    background-color: #7f8c8d;
 }
