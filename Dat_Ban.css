@@ -18,7 +18,7 @@ body{
     min-height: 100vh;
 }
 .banner{
-    background: url(img/banner-bg.png) bottom center;
+    background: url(../img/banner-bg.png) bottom center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 10px 0 0;
@@ -29,9 +29,12 @@ body{
     font-size: 24px;
     line-height: 30px;
 }
+.banner .text-banner ul li{
+    margin-top: 5px;
+}
 @media only screen and (min-width: 767px) {
     .banner {
-        background: url('img/home-banner-bg.png') top center;
+        background: url('../img/home-banner-bg.png') top center;
         background-repeat: no-repeat;
         margin-top: 0%;
         padding: 240px 0 540px;
@@ -155,7 +158,7 @@ body{
 
 /* Phần cam kết */ 
 .camket{
-    background: url('img/commit-bg-mobile.png') center;
+    background: url('../img/commit-bg-mobile.png') center;
     background-repeat: repeat-x;
     padding-bottom: 20px;
     margin-bottom: 40px;
@@ -219,7 +222,7 @@ body{
     .camket {
         padding: 95px 0 150px;
         margin: 25px 0 -30px;
-        background: url('img/commit-bg.png') top center;
+        background: url('../img/commit-bg.png') top center;
         background-repeat: no-repeat;
     }
     .box-camket .list li img {
@@ -299,7 +302,7 @@ body{
 
 /* Phần liên hệ */
 .box-lienhe {
-    background: url(img/contact-bg.jpg) center;
+    background: url(../img/contact-bg.jpg) center;
     /* background-repeat: no-repeat; */
     background-repeat: repeat-x;
     color: #FFFFFF;
@@ -397,3 +400,8 @@ input[type="text"], input[type="tel"] {
 .box-lienhe .form-lienhe .form button:hover{
     background-color: #7f8c8d;
 }
+
+.error {  
+    color: red;
+    display: none;
+}  
